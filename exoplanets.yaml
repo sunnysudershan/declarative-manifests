@@ -28,6 +28,7 @@ metadata:
   labels:
     app: exoplanets
   annotations:
+    description: Defines how to deploy the application server
     template.alpha.openshift.io/wait-for-ready: "true"
 spec:
   replicas: 1
@@ -44,7 +45,7 @@ spec:
     spec:
       containers:
       - name: exoplanets
-        image: registry.ocp4.example.com:8443/redhattraining/exoplanets:v1.0
+        image: registry.ocp4.example.com:8443/redhattraining/exoplanets:v1.1.0
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

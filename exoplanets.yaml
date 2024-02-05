@@ -17,7 +17,7 @@ metadata:
     app: exoplanets
 stringData:
   DB_NAME: database
-  DB_USER: user
+  DB_USER: user1
   DB_PASSWORD: password
   DB_ADMIN_PASSWORD: postgres
 ---
@@ -45,7 +45,7 @@ spec:
     spec:
       containers:
       - name: exoplanets
-        image: registry.ocp4.example.com:8443/redhattraining/exoplanets:v1.1.0
+        image: registry.ocp4.example.com:8443/redhattraining/exoplanets:v1.1.1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

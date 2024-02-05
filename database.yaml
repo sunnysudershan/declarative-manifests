@@ -22,7 +22,7 @@ metadata:
     template.openshift.io/expose-username: '{.data[''database-user'']}'
 stringData:
   database-name: database
-  database-user: user
+  database-user: user1
   database-password: password
   database-admin-password: postgres
 ---
